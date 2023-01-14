@@ -12,9 +12,9 @@ https://0xdeploy-faucet-demo.vercel.app/
 
 ## Video Tutorial
 
-[![](https://user-images.githubusercontent.com/19412160/212460373-16832943-6626-409c-aba9-15227937748d.png)](https://youtu.be/C2STv77PEKw)
+[![](https://user-images.githubusercontent.com/19412160/212460373-16832943-6626-409c-aba9-15227937748d.png)](https://youtu.be/19cqcrXoNws)
 
-https://youtu.be/C2STv77PEKw
+https://youtu.be/19cqcrXoNws
 
 ## Environment Variables
 
