@@ -2,15 +2,19 @@
 
 <i> Testnet faucet template using Nextjs, Tailwind, hCaptcha and Redis </i>
 
+## One click deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xDeploy%2Ffaucet-evm-template)
+
+## Demo
+
+https://0xdeploy-faucet-demo.vercel.app/
+
 ## Video Tutorial
 
 [![](https://user-images.githubusercontent.com/19412160/212460373-16832943-6626-409c-aba9-15227937748d.png)](https://youtu.be/C2STv77PEKw)
 
 https://youtu.be/C2STv77PEKw
-
-## One click deploy
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xDeploy%2Ffaucet-evm-template)
 
 In Vercel, Add Environment Variables
 
