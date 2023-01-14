@@ -4,7 +4,7 @@
 
 ## One click deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fleon-do%2Ffaucet-evm-template.git)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xDeploy%2Ffaucet-evm-template)
 
 In Vercel, Add Environment Variables
 
