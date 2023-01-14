@@ -16,7 +16,7 @@ https://0xdeploy-faucet-demo.vercel.app/
 
 https://youtu.be/C2STv77PEKw
 
-In Vercel, Add Environment Variables
+## Environment Variables
 
 ```
 PRIVATE_KEY=0000000000000000000000000000000000000000000000000000000000000000
