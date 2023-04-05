@@ -36,7 +36,7 @@ export default function SuccessModal(props: Props) {
                 </div>
               </div>
               <div className="mt-5 sm:mt-6">
-                <button onClick={() => setShow("")} type="button" className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm">
+                <button onClick={() => setShow("")} type="button" className="inline-flex w-full justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:text-sm">
                   Close
                 </button>
               </div>
