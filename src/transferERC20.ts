@@ -7,7 +7,7 @@ type TransferERC20= {
 };
 
 /*
- * Transfer coin to address. This is native token ie ETH
+ * Transfer token to address. This is an ERC20 token
  * @param {string} address - The address to transfer to
  */
 export default async function transferERC20(address: string): Promise<TransferERC20> {
