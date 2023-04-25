@@ -1,7 +1,7 @@
 import wallet from "./wallet";
 import { ethers } from "ethers";
 
-type TransferERC20= {
+type TransferERC20 = {
   success: boolean;
   message: string;
 };
@@ -17,7 +17,6 @@ export default async function transferERC20(address: string): Promise<TransferER
     const abi = [ { inputs: [ { internalType: "address", name: "to", type: "address", }, { internalType: "uint256", name: "amount", type: "uint256", }, ], name: "transfer", outputs: [ { internalType: "bool", name: "", type: "bool", }, ], stateMutability: "nonpayable", type: "function", }, ];
     const contract = new ethers.Contract(tokenAddress, abi, wallet);
     const transaction = await contract.transfer(address, process.env.VALUE);
-    console.log(transaction);
     return {
       success: true,
       message: transaction.hash,

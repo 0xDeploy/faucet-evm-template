@@ -3,7 +3,6 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { ethers } from "ethers";
 import { verify } from "hcaptcha";
 import canRecieve from "../../src/canRecieve";
-import transferCoin from "../../src/transferCoin";
 import transferERC20 from "../../src/transferERC20";
 import redis from "../../src/redis";
 
@@ -33,10 +32,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const recieved = await canRecieve(address);
   // if not enough time has passed
   if (!recieved.success) return res.status(400).json({ message: recieved.message });
-  // transfer coin
-  const transfer = await transferCoin(address);
-  // transfer ERC20
-  await transferERC20(address);
+  // transfer coin/token 
+  const transfer = await transferERC20(address);
   // if transfer was unsuccessful
   if (!transfer.success) return res.status(400).json({ message: transfer.message });
   // update the last transfer timestamp to now
