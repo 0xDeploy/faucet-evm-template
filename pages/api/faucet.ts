@@ -37,7 +37,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   // if transfer was unsuccessful
   if (!transfer.success) return res.status(400).json({ message: transfer.message });
   // update the last transfer timestamp to now
-  await redis.set(address, Math.floor(Date.now() / 1000));
+  await redis.set(`${address}-coin`, Math.floor(Date.now() / 1000));
   // transfer is successful
   return res.status(200).json({ message: transfer.message });
 }
