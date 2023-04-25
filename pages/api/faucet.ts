@@ -32,12 +32,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const recieved = await canRecieve(address);
   // if not enough time has passed
   if (!recieved.success) return res.status(400).json({ message: recieved.message });
-  // transfer coin/token 
+  // transfer coin/token
   const transfer = await transferERC20(address);
   // if transfer was unsuccessful
   if (!transfer.success) return res.status(400).json({ message: transfer.message });
   // update the last transfer timestamp to now
-  await redis.set(`${address}-erc20, Math.floor(Date.now() / 1000));
+  await redis.set(`${address}-erc20`, Math.floor(Date.now() / 1000));
   // transfer is successful
   return res.status(200).json({ message: transfer.message });
 }
