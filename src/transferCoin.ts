@@ -20,6 +20,7 @@ export default async function transferCoin(address: string): Promise<TransferCoi
       message: transaction.hash,
     };
   } catch (error) {
+    console.error(error)
     return {
       success: false,
       message: "Unable to Send Transaction",
