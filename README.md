@@ -2,10 +2,6 @@
 
 <i> Testnet faucet template using Nextjs, Tailwind, hCaptcha and Redis </i>
 
-## One click deploy
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xDeploy%2Ffaucet-evm-template)
-
 ## Demo
 
 https://0xdeploy-faucet-demo.vercel.app/
